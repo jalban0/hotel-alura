@@ -12,10 +12,7 @@ public class ReservaCalculaValor {
     private JDateChooser dataSaida;
     private Integer valorDiaria = 500;
 
-//    public ReservaCalculaValor(JDateChooser dataEntrada, JDateChooser dataSaida) {
-//        this.dataEntrada = dataEntrada;
-//        this.dataSaida = dataSaida;
-//    }
+
 
     public void calcularValor(JDateChooser dataEntrada, JDateChooser dataSaida, JTextField txtValor) {
         int valor = 0;
