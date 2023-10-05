@@ -345,10 +345,6 @@ public class Buscar extends JFrame {
                     String formaPagamento = (String) modelo.getValueAt(tbReservas.getSelectedRow(), 4);
                     Integer id = Integer.valueOf(modelo.getValueAt(tbReservas.getSelectedRow(), 0).toString());
 
-                        // Está dando erro esta implementação, no método converteDados, onde passaria o novoValor para atualizar
-//                    ReservaCalculaValor calculaValor = new ReservaCalculaValor();
-//                    String novoValor = calculaValor.converteDados(dataEntrada, dataSaida, valor);
-
                     this.reservaService.atualizar(dataEntrada, dataSaida, valor, formaPagamento, id);
                     JOptionPane.showMessageDialog(this, String.format("Atualização realizada com sucesso!"));
                 }, () -> JOptionPane.showMessageDialog(this, "Por favor, escolha um registro!"));
